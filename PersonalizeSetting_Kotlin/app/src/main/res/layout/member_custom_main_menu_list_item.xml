@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_320"
+    android:layout_height="@dimen/dp_44"
+    android:background="@color/zero">
+
+    <!-- 大頭貼 -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/item_thumbnail_image_view"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_8"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        app:shapeAppearanceOverlay="@style/circular"
+        android:focusable="false"/>
+
+    <!-- Icon 名字 -->
+    <TextView
+        android:id="@+id/item_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_44"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_12"
+        android:focusable="false"/>
+
+    <FrameLayout
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/custom_main_menu_check_box_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/radio_btn_hovered"
+            android:scaleType="fitCenter"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/custom_main_menu_selected_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_10"/>
+
+    </FrameLayout>
+
+    <!-- 按鈕 -->
+    <Button
+        android:id="@+id/custom_main_menu_selected_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/recyclerview_item_640x88_colorful_selector"/>
+
+</RelativeLayout>

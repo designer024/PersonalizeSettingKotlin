@@ -1,0 +1,94 @@
+<resources>
+    <!-- APP 名稱 -->
+    <string name="app_name">個人化設定 Kotlin</string>
+    <!-- 主畫面資訊 -->
+    <string name="main_screen_information">主畫面資訊</string>
+    <!-- 定位所在位置的日期與一周天氣資訊 -->
+    <string name="date_and_weather_information_for_the_week_of_positioned_location">定位所在位置的日期與天氣資訊</string>
+    <!-- 裝置主題 -->
+    <string name="device_theme">裝置主題</string>
+    <!-- 選單 -->
+    <string name="menu">選單</string>
+    <!-- 儲存設定 -->
+    <string name="storage_settings">儲存設定</string>
+    <!-- 個人化 -->
+    <string name="personalization_action">個人化</string>
+    <!-- 個人化 -->
+    <string name="theme_title">個人化</string>
+    <!-- 炫彩 -->
+    <string name="colorful_theme">炫彩</string>
+    <!-- 簡約 -->
+    <string name="wire_theme">簡約</string>
+    <!-- 已套用 -->
+    <string name="applied">已使用</string>
+    <!-- 自訂檢視 -->
+    <string name="main_menu_setting_title">自訂檢視</string>
+    <!-- 最多5項 -->
+    <string name="up_to_5_items">最多 5 個</string>
+    <!-- 默認選單 -->
+    <string name="default_theme">預設</string>
+    <!-- 個人化選單 -->
+    <string name="custom_theme">自訂</string>
+    <!-- 儲存 -->
+    <string name="save">儲存</string>
+    <!-- 已設定 -->
+    <string name="theme_set">已設定</string>
+
+    <!-- 主畫面 -->
+    <string name="home">主畫面</string>
+    <!-- Hi,Vici -->
+    <string name="hi_vici">Hi,Vici</string>
+
+    <!-- 確認 -->
+    <string name="confirm_text">確認</string>
+    <!-- 取消 -->
+    <string name="cancel_text">取消</string>
+
+
+    <!-- <!--> <!--> <!--> <!--> <!--> <!--> <!--> <!--> <!--> <!--> <!--> <!--> <!--> <!--> <!--> <!--> -->
+    <!--          以下是Leapsy App            -->
+    <!-- 熱像偵測 -->
+    <string name="thermal_app">熱像偵測</string>
+    <!-- 相機 -->
+    <string name="camera_app">相機</string>
+    <!-- 相簿 -->
+    <string name="album_app">相簿</string>
+    <!-- 檔案瀏覽器 -->
+    <string name="file_browser_app">檔案瀏覽器</string>
+    <!-- 網頁瀏覽器 -->
+    <string name="web_browser_app">瀏覽器</string>
+    <!-- 王座AR -->
+    <string name="throne_app">Vici王座</string>
+    <!-- 軟體更新 -->
+    <string name="update_app">應用管理</string>
+    <!-- 戰情系統 -->
+    <string name="hud3d_app">3D戰情</string>
+    <!-- 環境控制 -->
+    <string name="environment_app">環境控制</string>
+    <!-- 故宫 -->
+    <string name="palace_app">故宮AR導覽</string>
+    <!-- FHOne 南科消防 -->
+    <string name="fh1_app">南科眼鏡</string>
+    <!-- 人臉辨識 -->
+    <string name="face_recognize_app">人臉辨識</string>
+    <!-- 人體感測 -->
+    <string name="posture_app">人體感測</string>
+    <!-- 手勢辨識 -->
+    <string name="gesture_app">手勢辨識</string>
+    <!-- 保修系統 -->
+    <string name="aws_app">保修系統</string>
+    <!-- 專家系統 -->
+    <string name="expert_app">專家系統</string>
+    <!-- 關機 -->
+    <string name="shutdown_app">關機</string>
+    <!-- 設定 -->
+    <string name="settings_app">設定</string>
+    <!-- 程式集 -->
+    <string name="programs_app">應用程式</string>
+    <!-- 通知 -->
+    <string name="messages_app">通知</string>
+    <!-- 專家系統 -->
+    <string name="expert_system">專家系統</string>
+    <!-- QR Code 掃描 -->
+    <string name="qr_code_scanner">QRCode掃描</string>
+</resources>

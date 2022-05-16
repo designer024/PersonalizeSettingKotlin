@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activities.MainActivity">
+
+    <!-- 左邊甜甜圈 -->
+    <RelativeLayout
+        android:layout_width="@dimen/dp_112"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_52_5"
+        android:layout_marginTop="@dimen/dp_60">
+
+        <!-- 個人化設定標題 -->
+        <TextView
+            android:tag="999999_title"
+            android:id="@+id/main_page_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/white"
+            android:text="@string/theme_title"/>
+
+        <!-- 甜甜圈layout on main page -->
+        <RelativeLayout
+            android:id="@+id/icons_container_main_page_layout"
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_112"
+            android:layout_marginTop="@dimen/dp_30"
+            android:visibility="visible"/>
+
+        <!-- 甜甜圈layout on custom page -->
+        <RelativeLayout
+            android:id="@+id/icons_container_custom_page_layout"
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_112"
+            android:layout_marginTop="@dimen/dp_30"
+            android:visibility="gone"/>
+
+        <!-- 甜甜圈外框 -->
+        <ImageView
+            android:id="@+id/donut_outline_image_view"
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_112"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@mipmap/set_personalizationpage_img_color_menu"/>
+    </RelativeLayout>
+
+    <!-- 選擇內容 main layout -->
+    <RelativeLayout
+        android:id="@+id/main_page_layout"
+        android:layout_width="@dimen/dp_370"
+        android:layout_height="@dimen/dp_240"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_73_5"
+        android:background="@drawable/main_page_background_shape"
+        android:visibility="visible"
+        android:focusable="false">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/personalization_setting_group_recyclerview"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="@dimen/dp_220"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_11_5"
+            android:scrollbars="vertical"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_224"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_6"
+            android:orientation="vertical">
+            <!-- Recycler view 向上 按鈕 -->
+            <ImageButton
+                android:tag="1_navigation"
+                android:id="@+id/main_page_scroll_up_image_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_28"
+                android:src="@drawable/src_icon_up_l"/>
+
+            <!-- Recycler view 向下 按鈕 -->
+            <ImageButton
+                android:tag="2_navigation"
+                android:id="@+id/main_page_scroll_down_image_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_168"
+                android:src="@drawable/src_icon_down_l"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 選擇內容 for 自定義主菜單 layout -->
+    <RelativeLayout
+        android:id="@+id/custom_setting_page_layout"
+        android:layout_width="@dimen/dp_370"
+        android:layout_height="@dimen/dp_252"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_73_5"
+        android:visibility="gone"
+        android:focusable="false">
+
+        <!-- 背景圖 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_208"
+            android:background="@drawable/main_page_background_shape"/>
+
+        <!-- 主選單設定 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_9"
+            android:text="@string/main_menu_setting_title"
+            android:focusable="false"/>
+
+        <!-- 最多5項 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_9"
+            android:text="@string/up_to_5_items"
+            android:layout_alignParentEnd="true"
+            android:focusable="false"/>
+
+        <!-- just a line -->
+        <View
+            android:layout_width="@dimen/dp_318"
+            android:layout_height="@dimen/dp_0_5"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_23_5"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/custom_main_menu_selection_apps_recyclerview"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="@dimen/dp_176"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_49"
+            android:scrollbars="vertical"/>
+
+        <!-- 往上 下捲 按鈕 layout -->
+        <LinearLayout
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_192"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_6"
+            android:orientation="vertical">
+            <!-- Recycler view 向上 按鈕 -->
+            <ImageButton
+                android:tag="3_navigation"
+                android:id="@+id/custom_page_scroll_up_image_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_28"
+                android:src="@drawable/src_icon_up_l"/>
+
+            <!-- Recycler view 向下 按鈕 -->
+            <ImageButton
+                android:tag="4_navigation"
+                android:id="@+id/custom_page_scroll_down_image_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_136"
+                android:src="@drawable/src_icon_down_l"/>
+        </LinearLayout>
+
+        <!-- 取消 按鈕 -->
+        <Button
+            android:tag="2_ovalButton"
+            android:id="@+id/cancel_custom_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_120"
+            android:layout_alignParentBottom="true"
+            style="@style/button_style_color_oval"
+            android:text="@string/cancel_text"/>
+
+        <!-- 確認 按鈕 -->
+        <Button
+            android:tag="1_ovalButton"
+            android:id="@+id/confirm_custom_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            style="@style/button_style_color_oval"
+            android:text="@string/confirm_text"/>
+    </RelativeLayout>
+
+    <!-- pop layout -->
+    <RelativeLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone">
+        <!-- 全黑背景 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="false"/>
+
+        <RelativeLayout
+            android:id="@+id/pop_background_layout"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="@dimen/dp_232"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/stste_color_pop_default">
+
+            <!-- 取消 按鈕 -->
+            <Button
+                android:tag="4_ovalButton"
+                android:id="@+id/pop_cancel_custom_button"
+                android:layout_marginStart="@dimen/dp_44"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_28"
+                style="@style/button_style_color_oval"
+                android:text="@string/cancel_text"/>
+
+            <!-- 確認 按鈕 -->
+            <Button
+                android:tag="3_ovalButton"
+                android:id="@+id/pop_confirm_custom_button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp_44"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_28"
+                style="@style/button_style_color_oval"
+                android:text="@string/confirm_text"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- pop layout for ask manage external storage enable -->
+    <RelativeLayout
+        android:id="@+id/pop_for_ask_manage_external_storage_enable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/pop_ask_enable_background"
+        android:visibility="gone">
+
+        <!-- icon -->
+        <ImageView
+            android:id="@+id/ask_manage_external_storage_enable_image_view"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="@dimen/dp_232"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/state_color_pop_default"/>
+
+        <!-- icon -->
+        <View
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_100"
+            android:background="@mipmap/icon_pop_instruction"/>
+        <!-- pop title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_150"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_13"
+            android:text="Manage external storage"/>
+
+        <!-- go setting button -->
+        <Button
+            android:id="@+id/go_setting_2_button"
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_100"
+            android:textSize="@dimen/dp_12"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Go setting"
+            android:background="@drawable/oval_colorful_button_selector"/>
+    </RelativeLayout>
+
+</RelativeLayout>

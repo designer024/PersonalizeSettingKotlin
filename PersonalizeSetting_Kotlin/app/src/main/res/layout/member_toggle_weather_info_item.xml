@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_320"
+    android:layout_height="@dimen/dp_44"
+    android:background="@color/zero">
+
+    <!-- weather圖示 -->
+    <ImageView
+        android:id="@+id/weather_icon_image_view"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_bg_color_default"
+        android:visibility="visible"
+        android:focusable="false"/>
+
+    <!-- 圖示 -->
+    <View
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/icon_sunny_default"
+        android:focusable="false"/>
+
+    <!-- 主畫面資訊 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_6"
+        android:textSize="@dimen/dp_12"
+        android:text="@string/main_screen_information"
+        android:textColor="@color/white"/>
+
+    <!-- 定位所在位置的日期與一周天氣資訊 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_44"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:textSize="@dimen/dp_7_5"
+        android:text="@string/date_and_weather_information_for_the_week_of_positioned_location"
+        android:textColor="@color/white"/>
+
+    <!-- 按鈕 -->
+    <Button
+        android:id="@+id/switch_weather_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/recyclerview_item_640x88_type_2_selector" />
+
+    <!-- switch -->
+    <RelativeLayout
+        android:id="@+id/switch_button_layout"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_24"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/switch_button_back_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/switch_button_colorful_selector"/>
+
+        <ImageView
+            android:id="@+id/switch_button_thumbnail_off_image_view"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_28"
+            android:background="@drawable/switch_thumbnail_selector"/>
+
+        <ImageView
+            android:id="@+id/switch_button_thumbnail_on_image_view"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:background="@drawable/switch_thumbnail_selector"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

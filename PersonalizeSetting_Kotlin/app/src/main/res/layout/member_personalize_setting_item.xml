@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_320"
+    android:layout_height="@dimen/dp_108"
+    android:background="@color/zero">
+
+    <!-- 副標題 -->
+    <TextView
+        android:id="@+id/subtitle_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_3"
+        android:textSize="@dimen/dp_9"
+        android:text="@string/device_theme"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        android:focusable="false"/>
+
+    <!-- just a white line -->
+    <View
+        android:layout_width="@dimen/dp_310"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginStart="@dimen/dp_3"
+        android:layout_marginTop="@dimen/dp_15_5"
+        android:background="@color/white"
+        android:focusable="false"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginBottom="@dimen/dp_44"
+        android:layout_alignParentBottom="true">
+
+        <!-- just a line -->
+        <View
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:focusable="false"
+            android:background="@color/recyclerview_item_under_line"/>
+
+        <!-- 圖示 -->
+        <ImageView
+            android:id="@+id/item_line_1_icon_image_view"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:background="@color/zero"
+            android:focusable="false"/>
+
+        <!-- 標題 -->
+        <TextView
+            android:id="@+id/item_line_1_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_44"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_12"
+            android:text="@string/colorful_theme"
+            android:focusable="false"/>
+
+        <!-- 是否被選擇的狀態 圖示 -->
+        <ImageView
+            android:id="@+id/item_line_1_state_image_view"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:background="@mipmap/icon_navigate_right_default_grey"
+            android:focusable="false"/>
+
+        <!-- 是否被選擇的狀態 文字 -->
+        <TextView
+            android:id="@+id/item_line_1_state_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:textSize="@dimen/dp_9"
+            android:textColor="@color/text_buttons_hover"
+            android:focusable="false"/>
+
+        <!-- 按鈕 -->
+        <Button
+            android:id="@+id/item_line_1_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/recyclerview_item_640x88_colorful_selector" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_alignParentBottom="true">
+
+        <!-- 圖示 -->
+        <ImageView
+            android:id="@+id/item_line_2_icon_image_view"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:background="@color/zero"
+            android:focusable="false"/>
+
+        <!-- 標題 -->
+        <TextView
+            android:id="@+id/item_line_2_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_44"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_12"
+            android:text="@string/wire_theme"
+            android:focusable="false"/>
+
+        <!-- 是否被選擇的狀態 圖示 -->
+        <ImageView
+            android:id="@+id/item_line_2_state_image_view"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:background="@mipmap/icon_navigate_right_default_grey"
+            android:focusable="false"/>
+
+        <!-- 是否被選擇的狀態 文字 -->
+        <TextView
+            android:id="@+id/item_line_2_state_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:textSize="@dimen/dp_9"
+            android:textColor="@color/text_buttons_hover"
+            android:focusable="false"/>
+
+        <!-- 按鈕 -->
+        <Button
+            android:id="@+id/item_line_2_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/recyclerview_item_640x88_colorful_selector"/>
+    </RelativeLayout>
+
+</RelativeLayout>
