@@ -62,11 +62,10 @@ class GlobalDefine {
             "\n]",
             "\n}")
 
-
-        val SDCARD_ROOT_PATH = String.format("%s%s", Environment.getExternalStorageDirectory().path, File.separator)
         const val EXTERNAL_STORAGE_PATH = "/storage/emulated/0/"
+        val SDCARD_ROOT_PATH = String.format("%s%s", Environment.getExternalStorageDirectory().path, File.separator)
 
-        val BASE_PUBLIC_DOWNLOAD_PATH = String.format("%s%s%s", "/storage/emulated/0/", Environment.DIRECTORY_DOWNLOADS, File.separator)
+        val BASE_PUBLIC_DOWNLOAD_PATH = String.format("%s%s%s", EXTERNAL_STORAGE_PATH, Environment.DIRECTORY_DOWNLOADS, File.separator)
 
         const val PERSONALIZED_SETTING_FOLDER : String  = ".PersonalizedSetting"
 
